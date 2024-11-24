@@ -85,4 +85,30 @@ func main() {
 	fmt.Printf("%#v\n", txt)
 	fmt.Printf("%T\n", txt)
 
+	// Array
+	var varArray1 = [3]int{1, 2, 3}
+	fmt.Println(varArray1)
+
+	var varFruit = [3]string{"Banana", "Melon", "Strawberry"}
+	fmt.Println(varFruit)
+
+	arr1 := [5]int{}              //not initialized
+	arr2 := [5]int{1, 2}          //partially initialized
+	arr3 := [5]int{1, 2, 3, 4, 5} //fully initialized
+
+	fmt.Println(arr1)
+	fmt.Println(arr2)
+	fmt.Println(arr3)
+
+	// Go Slices
+	myslice1 := []int{}
+	fmt.Println(len(myslice1))
+	fmt.Println(cap(myslice1))
+	fmt.Println(myslice1)
+
+	myslice2 := []string{"Go", "Slices", "Are", "Powerful"}
+	fmt.Println(len(myslice2))
+	fmt.Println(cap(myslice2))
+	fmt.Println(myslice2)
+
 }
