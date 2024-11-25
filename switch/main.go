@@ -23,4 +23,22 @@ func main() {
 	default:
 		fmt.Println("Not a Weekday")
 	}
+
+	name := "Muhammad Ayom Izzuddin"
+	switch length := len(name); length > 5 {
+	case true:
+		fmt.Println("Name Too Long")
+	case false:
+		fmt.Println("Format Name Is Correct")
+	}
+
+	length := len(name)
+	switch {
+	case length > 10:
+		fmt.Println("Name Too Long")
+	case length < 1:
+		fmt.Println("Name Cannot Be Null")
+	default:
+		fmt.Println("Format Name Is Correct")
+	}
 }
