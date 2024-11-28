@@ -2,14 +2,18 @@ package main
 
 import (
 	"fmt"
+	"go-fundamental/helper"
 )
 
 func main() {
 
-	// Declaring (Creating) Variables
-	fmt.Println("Hello, I was learn golang")
-	sentence := getSentence()
-	fmt.Println(sentence)
+	sayHelloVar := helper.SayHello("Muhammad Ayom Izzuddin")
+	fmt.Println(sayHelloVar)
+
+	// // Declaring (Creating) Variables
+	// fmt.Println("Hello, I was learn golang")
+	// sentence := getSentence()
+	// fmt.Println(sentence)
 
 	var numStaticType int
 	numStaticType = 10
